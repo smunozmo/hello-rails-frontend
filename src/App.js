@@ -6,7 +6,7 @@ import Greeting from './components/Greeting';
 
 const App = () => (
   <Provider store={store}>
-    <div className="cont">
+    <div>
       <Greeting />
     </div>
   </Provider>
