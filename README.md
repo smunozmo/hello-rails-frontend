@@ -2,6 +2,10 @@
 
 This is an excercise to display random greetings messages using React and Rails API for Microverse.
 
+## Backend Repository
+
+https://github.com/smunozmo/hello-rails-backend
+
 ## Built With
 
 - ![REACT](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
