@@ -17,21 +17,4 @@ const Greeting = () => {
   );
 };
 
-// const GET_THINGS_REQUEST = 'GET_THINGS_REQUEST';
-
-// function getMessages() {
-//   return {
-//     type: GET_THINGS_REQUEST
-//   };
-// };
-// class Greeting extends React.Component {
-//   render () {
-//     return (
-//       <React.Fragment>
-//         Greeting: {this.props.greeting}
-//       </React.Fragment>
-//     );
-//   }
-// }
-
 export default Greeting;
