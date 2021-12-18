@@ -1,7 +1,7 @@
 import React from 'react';
 import { Provider } from 'react-redux';
 import {
-  BrowserRouter,
+  HashRouter,
   Switch,
   Route,
   Redirect,
@@ -11,7 +11,7 @@ import Greeting from './components/Greeting';
 
 const App = () => (
   <Provider store={store}>
-    <BrowserRouter>
+    <HashRouter>
       <Switch>
         <Route exact path="/">
           <Redirect to="/home" />
@@ -22,7 +22,7 @@ const App = () => (
           </div>
         </Route>
       </Switch>
-    </BrowserRouter>
+    </HashRouter>
   </Provider>
 );
 
