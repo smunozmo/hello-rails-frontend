@@ -4,7 +4,6 @@ import {
   BrowserRouter,
   Switch,
   Route,
-  Redirect,
 } from 'react-router-dom';
 import store from './configureStore';
 import Greeting from './components/Greeting';
@@ -13,11 +12,21 @@ const App = () => (
   <Provider store={store}>
     <BrowserRouter>
       <Switch>
-        <Route exact path="/">
-          <Redirect to="/home" />
-        </Route>
+        <Route
+          exact
+          path="/"
+          render={() => (
+            <h5 style={{ margin: 'auto', width: '80%', textAlign: 'center' }}>
+              Click
+              {' '}
+              <a style={{ decoration: 'none' }} href="/home">here</a>
+            </h5>
+          )}
+        />
         <Route path="/home">
-          <Greeting />
+          <div>
+            <Greeting />
+          </div>
         </Route>
       </Switch>
     </BrowserRouter>
